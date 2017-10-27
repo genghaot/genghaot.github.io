@@ -141,7 +141,7 @@ img {
 		font-weight: 200;
 		color: #666;
 		line-height: 1.5;
-		position: absolute;
+		max-width: 400px;
 
 		h1 {
 			font-family: 'Yantramanav', sans-serif;
@@ -171,9 +171,7 @@ img {
 		}
 
 		@include media-breakpoint-up(md) {
-			margin-top: 150px;
-			left: 50%;
-			transform: translateX(-50%);
+			margin: 150px auto 0;
 		}
 	}
 

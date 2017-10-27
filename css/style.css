@@ -7984,7 +7984,7 @@ img {
     font-weight: 200;
     color: #666;
     line-height: 1.5;
-    position: absolute;
+    max-width: 400px;
     margin-top: 200px; }
     .intro .description h1 {
       font-family: 'Yantramanav', sans-serif;
@@ -8008,9 +8008,7 @@ img {
         margin-top: 200px; } }
     @media (min-width: 768px) {
       .intro .description {
-        margin-top: 150px;
-        left: 50%;
-        transform: translateX(-50%); } }
+        margin: 150px auto 0; } }
   @media (min-width: 576px) {
     .intro {
       background-image: url("../img/laptop.svg"), url("../img/glasses and tea.svg"), url("../img/stationery.svg");
