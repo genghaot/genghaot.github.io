@@ -7974,7 +7974,7 @@ img {
   justify-content: center;
   align-items: center;
   background-image: url("../img/laptop.svg"), url("../img/glasses and tea.svg"), url("../img/stationery.svg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: 50% -8%, 25% 500px, 75% 400px;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 45%, 27.5%, 30%;
@@ -7986,6 +7986,9 @@ img {
     line-height: 1.5;
     position: fixed;
     margin-top: 200px; }
+    @media (max-width: 575px) {
+      .intro .description {
+        position: relative; } }
     .intro .description h1 {
       font-family: 'Yantramanav', sans-serif;
       font-size: 40px;

@@ -13,20 +13,20 @@ $(document).ready(function(){
     
     new WOW().init();
 
-    var s = skrollr.init();
-    if (s.isMobile()) {
-        s.destroy();
-    }
-
     $(".worknav").click(function() {
-        $('body').animate({
+        $('html, body').animate({
             scrollTop: $("#work").offset().top - 40
         }, 500);
     });
 
     $(".topnav").click(function() {
-        $('body').animate({
+        $('html, body').animate({
             scrollTop: $("#top").offset().top
         }, 500);
     });
+
+    var s = skrollr.init();
+    if (s.isMobile()) {
+        s.destroy();
+    }
 });
