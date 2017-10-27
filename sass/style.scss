@@ -141,11 +141,7 @@ img {
 		font-weight: 200;
 		color: #666;
 		line-height: 1.5;
-		position: fixed;
-
-		@include media-breakpoint-down(xs) {
-			position: relative;
-		}
+		position: absolute;
 
 		h1 {
 			font-family: 'Yantramanav', sans-serif;
@@ -192,7 +188,7 @@ img {
 
 	@include media-breakpoint-up(sm) {
 		background-image: url('../img/laptop.svg'), url('../img/glasses and tea.svg'), url('../img/stationery.svg');
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-position: 50% -25%, 25% 450px, 75% 350px;
 		background-repeat: no-repeat, no-repeat, no-repeat;
 		background-size: 40%, 22.5%, 25%;
