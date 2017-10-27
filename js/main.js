@@ -18,13 +18,13 @@ $(document).ready(function(){
     skrollr.menu.init(s);
 
     $(".worknav").click(function() {
-        $('html, body').animate({
+        $('body').animate({
             scrollTop: $("#work").offset().top - 40
         }, 500);
     });
 
     $(".topnav").click(function() {
-        $('html, body').animate({
+        $('body').animate({
             scrollTop: $("#top").offset().top
         }, 500);
     });
