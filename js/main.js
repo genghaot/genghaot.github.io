@@ -15,6 +15,8 @@ $(document).ready(function(){
 
     var s = skrollr.init();
 
+    skrollr.menu.init(s);
+
     $(".worknav").click(function() {
         $('html, body').animate({
             scrollTop: $("#work").offset().top - 40
