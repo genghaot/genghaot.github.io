@@ -14,8 +14,9 @@ $(document).ready(function(){
     new WOW().init();
 
     var s = skrollr.init();
-
-    skrollr.menu.init(s);
+    if (s.isMobile()) {
+        s.destroy();
+    }
 
     $(".worknav").click(function() {
         $('body').animate({
