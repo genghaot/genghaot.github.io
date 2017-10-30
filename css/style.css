@@ -5561,10 +5561,6 @@ body {
   font-weight: 300;
   font-size: 0.875rem; }
 
-img {
-  max-width: 100%;
-  max-height: 100%; }
-
 .head {
   position: absolute;
   top: 0;
@@ -5944,8 +5940,13 @@ img {
 .work-summary .greybg, .accenture-summary .greybg, .investingnote-summary .greybg, .oneservice-summary .greybg, .srina-summary .greybg {
   background: #f5f5f5;
   padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center; }
+  padding-bottom: 30px; }
+
+@media (max-width: 575px) {
+  .work-summary .project-info div, .accenture-summary .project-info div, .investingnote-summary .project-info div, .oneservice-summary .project-info div, .srina-summary .project-info div {
+    margin-bottom: 30px; }
+    .work-summary .project-info div:last-child, .accenture-summary .project-info div:last-child, .investingnote-summary .project-info div:last-child, .oneservice-summary .project-info div:last-child, .srina-summary .project-info div:last-child {
+      margin-bottom: 0; } }
 
 .work-summary h3, .accenture-summary h3, .investingnote-summary h3, .oneservice-summary h3, .srina-summary h3 {
   font-family: 'Yantramanav', sans-serif;
