@@ -459,6 +459,16 @@ body {
 	}
 }
 
+.snapstyle-intro {
+	@extend .work-intro;
+	background-color: #f68c79;
+}
+
+.accenture-intro {
+	@extend .work-intro;
+	background-color: #80cbc4;
+}
+
 .oneservice-intro {
 	@extend .work-intro;
 	background-color: #8ce0e4;
@@ -467,11 +477,6 @@ body {
 .investingnote-intro {
 	@extend .work-intro;
 	background-color: #d6e9da;
-}
-
-.accenture-intro {
-	@extend .work-intro;
-	background-color: #80cbc4;
 }
 
 .srina-intro {
@@ -580,6 +585,21 @@ body {
 	@include media-breakpoint-up(lg) {
 		margin-right: 120px;
 		margin-left: 120px;
+	}
+}
+
+.snapstyle-summary {
+	@extend .work-summary;
+
+	h2 {
+		color: #e7204e;
+	}
+
+	.video-block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 	}
 }
 
