@@ -5885,21 +5885,24 @@ body {
 .aboutandcontact .row .inputbutton:hover {
   color: #333; }
 
-.work-intro, .snapstyle-intro, .accenture-intro, .oneservice-intro, .investingnote-intro, .srina-intro, .projectshowcase-intro, .about-intro {
+.work-intro, .sayabc-intro, .snapstyle-intro, .accenture-intro, .oneservice-intro, .investingnote-intro, .srina-intro, .projectshowcase-intro, .about-intro {
   background-color: #e9e9e9;
   padding-top: 120px;
   padding-bottom: 60px;
   text-align: center; }
-  .work-intro h1, .snapstyle-intro h1, .accenture-intro h1, .oneservice-intro h1, .investingnote-intro h1, .srina-intro h1, .projectshowcase-intro h1, .about-intro h1 {
+  .work-intro h1, .sayabc-intro h1, .snapstyle-intro h1, .accenture-intro h1, .oneservice-intro h1, .investingnote-intro h1, .srina-intro h1, .projectshowcase-intro h1, .about-intro h1 {
     font-family: 'Yantramanav', sans-serif;
     font-size: 40px;
     font-weight: 300;
     color: #000; }
-  .work-intro h2, .snapstyle-intro h2, .accenture-intro h2, .oneservice-intro h2, .investingnote-intro h2, .srina-intro h2, .projectshowcase-intro h2, .about-intro h2 {
+  .work-intro h2, .sayabc-intro h2, .snapstyle-intro h2, .accenture-intro h2, .oneservice-intro h2, .investingnote-intro h2, .srina-intro h2, .projectshowcase-intro h2, .about-intro h2 {
     font-family: 'Yantramanav', sans-serif;
     font-size: 18px;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.48); }
+
+.sayabc-intro {
+  background-color: #d2f5da; }
 
 .snapstyle-intro {
   background-color: #ffe0e6; }
@@ -5928,11 +5931,11 @@ body {
   height: 500px;
   width: 100%; }
 
-.work-summary .row, .snapstyle-summary .row, .accenture-summary .row, .investingnote-summary .row, .oneservice-summary .row, .srina-summary .row {
+.work-summary .row, .sayabc-summary .row, .snapstyle-summary .row, .accenture-summary .row, .investingnote-summary .row, .oneservice-summary .row, .srina-summary .row {
   margin-top: 30px;
   margin-bottom: 30px; }
 
-.work-summary h2, .snapstyle-summary h2, .accenture-summary h2, .investingnote-summary h2, .oneservice-summary h2, .srina-summary h2 {
+.work-summary h2, .sayabc-summary h2, .snapstyle-summary h2, .accenture-summary h2, .investingnote-summary h2, .oneservice-summary h2, .srina-summary h2 {
   font-family: 'Yantramanav', sans-serif;
   font-size: 25px;
   font-weight: 300;
@@ -5940,18 +5943,18 @@ body {
   margin-bottom: 15px;
   text-align: center; }
 
-.work-summary .greybg, .snapstyle-summary .greybg, .accenture-summary .greybg, .investingnote-summary .greybg, .oneservice-summary .greybg, .srina-summary .greybg {
+.work-summary .greybg, .sayabc-summary .greybg, .snapstyle-summary .greybg, .accenture-summary .greybg, .investingnote-summary .greybg, .oneservice-summary .greybg, .srina-summary .greybg {
   background: #f5f5f5;
   padding-top: 30px;
   padding-bottom: 30px; }
 
 @media (max-width: 575px) {
-  .work-summary .project-info div, .snapstyle-summary .project-info div, .accenture-summary .project-info div, .investingnote-summary .project-info div, .oneservice-summary .project-info div, .srina-summary .project-info div {
+  .work-summary .project-info div, .sayabc-summary .project-info div, .snapstyle-summary .project-info div, .accenture-summary .project-info div, .investingnote-summary .project-info div, .oneservice-summary .project-info div, .srina-summary .project-info div {
     margin-bottom: 30px; }
-    .work-summary .project-info div:last-child, .snapstyle-summary .project-info div:last-child, .accenture-summary .project-info div:last-child, .investingnote-summary .project-info div:last-child, .oneservice-summary .project-info div:last-child, .srina-summary .project-info div:last-child {
+    .work-summary .project-info div:last-child, .sayabc-summary .project-info div:last-child, .snapstyle-summary .project-info div:last-child, .accenture-summary .project-info div:last-child, .investingnote-summary .project-info div:last-child, .oneservice-summary .project-info div:last-child, .srina-summary .project-info div:last-child {
       margin-bottom: 0; } }
 
-.work-summary h3, .snapstyle-summary h3, .accenture-summary h3, .investingnote-summary h3, .oneservice-summary h3, .srina-summary h3 {
+.work-summary h3, .sayabc-summary h3, .snapstyle-summary h3, .accenture-summary h3, .investingnote-summary h3, .oneservice-summary h3, .srina-summary h3 {
   font-family: 'Yantramanav', sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -5960,7 +5963,7 @@ body {
   margin-bottom: 15px;
   text-align: center; }
 
-.work-summary h4, .snapstyle-summary h4, .accenture-summary h4, .investingnote-summary h4, .oneservice-summary h4, .srina-summary h4 {
+.work-summary h4, .sayabc-summary h4, .snapstyle-summary h4, .accenture-summary h4, .investingnote-summary h4, .oneservice-summary h4, .srina-summary h4 {
   font-family: 'Yantramanav', sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -5968,13 +5971,13 @@ body {
   margin: 15px;
   text-align: center; }
 
-.work-summary blockquote, .snapstyle-summary blockquote, .accenture-summary blockquote, .investingnote-summary blockquote, .oneservice-summary blockquote, .srina-summary blockquote {
+.work-summary blockquote, .sayabc-summary blockquote, .snapstyle-summary blockquote, .accenture-summary blockquote, .investingnote-summary blockquote, .oneservice-summary blockquote, .srina-summary blockquote {
   font-size: 1rem;
   color: #999;
   border-left: 1px solid #d5d5d5;
   padding-left: 20px; }
 
-.work-summary .prototype-link, .snapstyle-summary .prototype-link, .accenture-summary .prototype-link, .investingnote-summary .prototype-link, .oneservice-summary .prototype-link, .srina-summary .prototype-link {
+.work-summary .prototype-link, .sayabc-summary .prototype-link, .snapstyle-summary .prototype-link, .accenture-summary .prototype-link, .investingnote-summary .prototype-link, .oneservice-summary .prototype-link, .srina-summary .prototype-link {
   font-family: 'Yantramanav', sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -6013,6 +6016,9 @@ body {
   .image-block {
     margin-right: 120px;
     margin-left: 120px; } }
+
+.sayabc-summary h2 {
+  color: #44c661; }
 
 .snapstyle-summary h2 {
   color: #e7204e; }
