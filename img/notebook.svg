@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="206px" viewBox="0 0 152 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>notebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="stationery" transform="translate(-66.000000, -53.000000)">
+            <g id="notebook" transform="translate(143.000000, 156.000000) rotate(-8.000000) translate(-143.000000, -156.000000) translate(80.000000, 60.000000)">
+                <path d="M3.48,3.11 L118.12,3.11 C120.21164,3.10999832 122.217465,3.94158279 123.69554,5.42153298 C125.173614,6.90148316 126.002654,8.90836198 126,11 L126,183.71 C125.983552,188.038604 122.478604,191.543552 118.15,191.56 L3.48,191.56 L3.48,3.11 Z" id="Shape" fill-opacity="0.16" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M0,0 L114.64,0 C116.73164,-1.6842425e-06 118.737465,0.83158279 120.21554,2.31153298 C121.693614,3.79148316 122.522654,5.79836198 122.52,7.89 L122.52,180.6 C122.503552,184.928604 118.998604,188.433552 114.67,188.45 L0,188.45 L0,0 Z" id="Shape" stroke="#D39359" fill="#FFB96E" fill-rule="nonzero"></path>
+                <text id="NOTES" fill="#D39053" font-family="AvenirNext-DemiBold, Avenir Next" font-size="16" font-weight="500" letter-spacing="3.55555558">
+                    <tspan x="26" y="49">NOTE</tspan>
+                    <tspan x="84.6542223" y="49" letter-spacing="4.0634923">S</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

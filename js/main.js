@@ -1,21 +1,9 @@
 $(document).ready(function(){
-    var mn = $(".navbar");
-    mns = "scrolled";
-    hdr = $('.navbar').height();
-
-    $(window).scroll(function() {
-      if( $(this).scrollTop() > hdr ) {
-        mn.addClass(mns);
-      } else {
-        mn.removeClass(mns);
-      }
-    });
-    
     new WOW().init();
 
     $(".worknav").click(function() {
         $('html, body').animate({
-            scrollTop: $("#work").offset().top - 40
+            scrollTop: $("#work").offset().top - 100
         }, 500);
     });
 
@@ -30,3 +18,37 @@ $(document).ready(function(){
         s.destroy();
     }
 });
+
+$(function (){
+	var container = $(window);
+	var changeNavState = function(nav, newStateIndex) {
+		nav.data('state', newStateIndex);
+		if (newStateIndex == 0) {
+			$('#nav').addClass('scrolled');
+		} else {
+			$('#nav').removeClass('scrolled');
+		}
+	};
+
+	var boolToStateIndex = function(bool) {
+		return bool * 1;
+	};
+
+	var maybeChangeNavState = function(nav, condState) {
+		var navState = nav.data('state');
+		if (navState === condState) {
+			changeNavState(nav, boolToStateIndex(!navState));
+		}
+	};
+
+	$('#nav').data('state', 1);
+
+	container.scroll(function() {
+		var $nav = $('#nav');
+		if (container.scrollTop() > 0) {
+			maybeChangeNavState($nav, 1);
+		} else {
+			maybeChangeNavState($nav, 0);
+		}
+	});
+})
