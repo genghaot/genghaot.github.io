@@ -12,11 +12,6 @@ $(document).ready(function(){
             scrollTop: $("#top").offset().top
         }, 500);
     });
-
-    var s = skrollr.init();
-    if (s.isMobile()) {
-        s.destroy();
-    }
 });
 
 $(function (){
@@ -51,4 +46,56 @@ $(function (){
 			maybeChangeNavState($nav, 0);
 		}
 	});
-})
+});
+
+$(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+		loop:true,
+		margin:10,
+		items:1,
+		nav:true,
+		navText : ['<ion-icon name="arrow-back"></ion-icon>','<ion-icon name="arrow-forward"></ion-icon>']
+	})
+});
+
+$('#rvrc-modal').on('click', function() {
+  var rvrcModal = $.fancybox.open( $('.rvrc-gallery'), {
+    touch: false,
+    infobar: false
+  });
+});
+
+$('#nus-icg-2016-modal').on('click', function() {
+  var nusICG2016Modal = $.fancybox.open( $('.nus-icg-2016-gallery'), {
+    touch: false,
+    infobar: false
+  });
+});
+
+$('#the-ridge-modal').on('click', function() {
+  var theRidgeModal = $.fancybox.open( $('.the-ridge-gallery'), {
+    touch: false,
+    infobar: false
+  });
+});
+
+$('#branding-modal').on('click', function() {
+  var brandingModal = $.fancybox.open( $('.branding-gallery'), {
+    touch: false,
+    infobar: false
+  });
+});
+
+$('#posters-modal').on('click', function() {
+  var postersModal = $.fancybox.open( $('.posters-gallery'), {
+    touch: false,
+    infobar: false
+  });
+});
+
+$('#paintings-modal').on('click', function() {
+  var paintingsModal = $.fancybox.open( $('.paintings-gallery'), {
+    touch: false,
+    infobar: false
+  });
+});

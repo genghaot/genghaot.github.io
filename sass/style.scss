@@ -46,7 +46,7 @@
 
 html, body {
 	background-color: #fff;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Assistant', sans-serif;
     font-weight: 300;
     font-size: $font-size-base;
     animation: fade-in 0.8s;
@@ -61,7 +61,7 @@ html, body {
 		background: rgba(255, 255, 255, .95);
 		box-shadow: 0 0 4px rgba(0, 0, 0, .25);
 		position: fixed;
-		z-index: 1;
+		z-index: 100;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -146,7 +146,7 @@ html, body {
 	}
 
 	.description {
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: 200;
 		color: #666;
 
@@ -168,6 +168,10 @@ html, body {
 			animation-delay: 0.4s;
 			animation-fill-mode: forwards;
 			opacity: 0;
+
+			@include media-breakpoint-up(lg) {
+				width: 70%;
+			}
 		}
 
 		a.worknav {
@@ -220,6 +224,7 @@ html, body {
 
 		a {
 			text-decoration: none;
+			outline: 0;
 		}
 
 		.project {
@@ -470,6 +475,16 @@ html, body {
 	}
 }
 
+.play-intro {
+	@extend .work-intro;
+
+	.header {
+		background-color: #fff;
+		padding-top: 120px;
+		padding-bottom: 60px;
+	}
+}
+
 .about-intro {
 	@extend .work-intro;
 
@@ -705,6 +720,81 @@ html, body {
 
 	h2 {
 		color: #a78266;
+	}
+}
+
+.owl-carousel {
+	.owl-stage {
+		display: flex;
+		align-items: center;
+	}
+
+	button {
+		outline: 0;
+	}
+	
+	.owl-prev {
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.owl-next {
+		right: 0;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.owl-prev ion-icon, .owl-next ion-icon {
+		background-color: rgba(255, 255, 255, .64);
+		font-size: 24px;
+		color: #333;
+		padding: 8px;
+	}
+
+	.owl-dots {
+		display: none;
+	}
+}
+
+.rvrc-gallery, .nus-icg-2016-gallery, .the-ridge-gallery, .branding-gallery, .posters-gallery, .paintings-gallery {
+	border-radius: 4px;
+
+	a {
+		color: #666;
+		outline: 0;
+		text-decoration: none;
+		border-bottom: 1px solid #ccc;
+
+		&:hover {
+			color: #111;
+			border-color: #999;
+		}
+	}
+
+	.fancybox-content {
+		text-align: center;
+	}
+
+	@include media-breakpoint-up(xs) {
+		img {
+			max-height: 400px;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		img {
+			max-width: 700px;
+			max-height: 500px;
+		}
+	}
+
+	.caption {
+		font-size: 13px;
 	}
 }
 

@@ -3265,7 +3265,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 html, body {
   background-color: #fff;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Assistant', sans-serif;
   font-weight: 300;
   font-size: 1rem;
   animation: fade-in 0.8s; }
@@ -3278,7 +3278,7 @@ html, body {
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
@@ -3344,7 +3344,7 @@ html, body {
   .intro .row {
     margin: 0; }
   .intro .description {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 200;
     color: #666;
     margin-top: 300px; }
@@ -3364,6 +3364,9 @@ html, body {
       animation-delay: 0.4s;
       animation-fill-mode: forwards;
       opacity: 0; }
+      @media (min-width: 992px) {
+        .intro .description .tagline {
+          width: 70%; } }
     .intro .description a.worknav {
       color: #666;
       border-bottom: 1px solid #ccc;
@@ -3395,7 +3398,8 @@ html, body {
   .work .works {
     margin: 24px auto; }
     .work .works a {
-      text-decoration: none; }
+      text-decoration: none;
+      outline: 0; }
     .work .works .project {
       margin-bottom: 24px;
       padding: 0;
@@ -3516,27 +3520,27 @@ html, body {
       .work .item .preview:hover img {
         transform: scale(1.1); }
 
-.work-intro .header, .sephora-intro .header, .sayabc-intro .header, .snapstyle-intro .header, .accenture-intro .header, .investingnote-intro .header, .oneservice-intro .header, .srina-intro .header, .projectshowcase-intro .header, .about-intro .header {
+.work-intro .header, .sephora-intro .header, .sayabc-intro .header, .snapstyle-intro .header, .accenture-intro .header, .investingnote-intro .header, .oneservice-intro .header, .srina-intro .header, .projectshowcase-intro .header, .play-intro .header, .about-intro .header {
   padding-top: 90px;
   padding-bottom: 30px; }
 
-.work-intro h1, .sephora-intro h1, .sayabc-intro h1, .snapstyle-intro h1, .accenture-intro h1, .investingnote-intro h1, .oneservice-intro h1, .srina-intro h1, .projectshowcase-intro h1, .about-intro h1 {
+.work-intro h1, .sephora-intro h1, .sayabc-intro h1, .snapstyle-intro h1, .accenture-intro h1, .investingnote-intro h1, .oneservice-intro h1, .srina-intro h1, .projectshowcase-intro h1, .play-intro h1, .about-intro h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
   font-weight: 300;
   color: #000; }
 
-.work-intro h2, .sephora-intro h2, .sayabc-intro h2, .snapstyle-intro h2, .accenture-intro h2, .investingnote-intro h2, .oneservice-intro h2, .srina-intro h2, .projectshowcase-intro h2, .about-intro h2 {
+.work-intro h2, .sephora-intro h2, .sayabc-intro h2, .snapstyle-intro h2, .accenture-intro h2, .investingnote-intro h2, .oneservice-intro h2, .srina-intro h2, .projectshowcase-intro h2, .play-intro h2, .about-intro h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.48); }
 
-.work-intro .hero, .sephora-intro .hero, .sayabc-intro .hero, .snapstyle-intro .hero, .accenture-intro .hero, .investingnote-intro .hero, .oneservice-intro .hero, .srina-intro .hero, .projectshowcase-intro .hero, .about-intro .hero {
+.work-intro .hero, .sephora-intro .hero, .sayabc-intro .hero, .snapstyle-intro .hero, .accenture-intro .hero, .investingnote-intro .hero, .oneservice-intro .hero, .srina-intro .hero, .projectshowcase-intro .hero, .play-intro .hero, .about-intro .hero {
   overflow: hidden;
   padding-top: 30px;
   padding-bottom: 120px; }
-  .work-intro .hero img, .sephora-intro .hero img, .sayabc-intro .hero img, .snapstyle-intro .hero img, .accenture-intro .hero img, .investingnote-intro .hero img, .oneservice-intro .hero img, .srina-intro .hero img, .projectshowcase-intro .hero img, .about-intro .hero img {
+  .work-intro .hero img, .sephora-intro .hero img, .sayabc-intro .hero img, .snapstyle-intro .hero img, .accenture-intro .hero img, .investingnote-intro .hero img, .oneservice-intro .hero img, .srina-intro .hero img, .projectshowcase-intro .hero img, .play-intro .hero img, .about-intro .hero img {
     max-width: 600px;
     max-height: 360px; }
 
@@ -3563,6 +3567,11 @@ html, body {
 
 .projectshowcase-intro .hero {
   background-color: #fff8e1; }
+
+.play-intro .header {
+  background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 60px; }
 
 .about-intro .header {
   padding-bottom: 0; }
@@ -3715,6 +3724,57 @@ html, body {
 
 .srina-summary h2 {
   color: #a78266; }
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center; }
+
+.owl-carousel button {
+  outline: 0; }
+
+.owl-carousel .owl-prev {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.owl-carousel .owl-next {
+  right: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.owl-carousel .owl-prev ion-icon, .owl-carousel .owl-next ion-icon {
+  background-color: rgba(255, 255, 255, 0.64);
+  font-size: 24px;
+  color: #333;
+  padding: 8px; }
+
+.owl-carousel .owl-dots {
+  display: none; }
+
+.rvrc-gallery, .nus-icg-2016-gallery, .the-ridge-gallery, .branding-gallery, .posters-gallery, .paintings-gallery {
+  border-radius: 4px; }
+  .rvrc-gallery a, .nus-icg-2016-gallery a, .the-ridge-gallery a, .branding-gallery a, .posters-gallery a, .paintings-gallery a {
+    color: #666;
+    outline: 0;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc; }
+    .rvrc-gallery a:hover, .nus-icg-2016-gallery a:hover, .the-ridge-gallery a:hover, .branding-gallery a:hover, .posters-gallery a:hover, .paintings-gallery a:hover {
+      color: #111;
+      border-color: #999; }
+  .rvrc-gallery .fancybox-content, .nus-icg-2016-gallery .fancybox-content, .the-ridge-gallery .fancybox-content, .branding-gallery .fancybox-content, .posters-gallery .fancybox-content, .paintings-gallery .fancybox-content {
+    text-align: center; }
+  .rvrc-gallery img, .nus-icg-2016-gallery img, .the-ridge-gallery img, .branding-gallery img, .posters-gallery img, .paintings-gallery img {
+    max-height: 400px; }
+  @media (min-width: 768px) {
+    .rvrc-gallery img, .nus-icg-2016-gallery img, .the-ridge-gallery img, .branding-gallery img, .posters-gallery img, .paintings-gallery img {
+      max-width: 700px;
+      max-height: 500px; } }
+  .rvrc-gallery .caption, .nus-icg-2016-gallery .caption, .the-ridge-gallery .caption, .branding-gallery .caption, .posters-gallery .caption, .paintings-gallery .caption {
+    font-size: 13px; }
 
 .bottom-nav {
   margin-top: 60px; }
